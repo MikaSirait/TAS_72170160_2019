@@ -10,7 +10,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
-
+import android.widget.Toast;
 
 
 public class CRUD_mhs extends AppCompatActivity {
@@ -33,7 +33,7 @@ public class CRUD_mhs extends AppCompatActivity {
         thasil = (TextView) findViewById(R.id.hasil);
         rgjk = (RadioGroup) findViewById(R.id.jk);
         skelas = (Spinner) findViewById(R.id.kelas);
-        sagama  = (Spinner) findViewById(R.id.agama);
+        sagama = (Spinner) findViewById(R.id.agama);
         etempatlahir = (EditText) findViewById(R.id.tempatlahir);
         etanggallahir = (EditText) findViewById(R.id.tanggallahir);
 
@@ -58,6 +58,28 @@ public class CRUD_mhs extends AppCompatActivity {
                         "Tanggal Lahir\t\t\t: " + inputtanggallahir + "\n");
             }
         });
+        public void onClick ()
+        if (enim.getText().toString().length() == 0) {
+            enim.setError("Silahkan mengisi NIM ");
+        }
+        if (enama.getText().toString().length() == 0) {
+            enama.setError("Silahkan mengisi nama");
+
+        }
+        if (etempatlahir.getText().toString().length() == 0) {
+            etempatlahir.setError("Silahkan mengisi tempat lahir");
+        }
+        if (etanggallahir.getText().toString().length() == 0) {
+            etanggallahir.setError("Silahkan mengisi tanggal lahir");
+
+        }
+
+    }
+
+        else
+
+    {
+        Toast.makeText(CRUD_mhs.this, "Data berhasil diinput", Toast.LENGTH_SHORT).show();
 
     }
 }
@@ -65,5 +87,3 @@ public class CRUD_mhs extends AppCompatActivity {
 
 
 
-    }
-}
