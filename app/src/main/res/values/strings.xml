@@ -9,4 +9,31 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
+
+    <string-array name="pilihkelas">
+        <item >--Pilih--</item>
+        <item   >A</item>
+        <item   >B</item>
+        <item   >D</item>
+        <item   >E</item>
+        <item   >F</item>
+        <item   >G</item>
+        <item   >H</item>
+        <item   >I</item>
+        <item   >J</item>
+        <item   >K</item>
+        <item   >L</item>
+        <item   >M</item>
+        <item   >N</item>
+    </string-array>
+
+    <string-array name="pilihagama">
+        <item >--Pilih--</item>
+        <item   >Islam</item>
+        <item   >Katolik</item>
+        <item   >Protestan</item>
+        <item   >Budha</item>
+        <item   >Hindu</item>
+        <item   >Konghucu</item>
+    </string-array>
 </resources>
